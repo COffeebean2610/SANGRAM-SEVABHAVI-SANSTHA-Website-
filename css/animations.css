@@ -1,0 +1,85 @@
+/* ==========================================================================
+   SANGRAM SEVABHAVI SANSTHA - ANIMATIONS STYLESHEET
+   Subtle editorial motion & intersection reveal transitions.
+   ========================================================================== */
+
+/* --- 1. Reveal on Scroll Utilities --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* Reveal with subtle scale */
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-scale.is-revealed {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* --- 2. Image Reveal Frame --- */
+.editorial-image-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.editorial-image-frame img {
+  transform: scale(1.06);
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.editorial-image-frame.is-revealed img,
+.editorial-image-frame:hover img {
+  transform: scale(1);
+}
+
+/* --- 3. Pulse Micro-animation for Badge --- */
+@keyframes subtlePulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.badge-pulse {
+  animation: subtlePulse 3s infinite ease-in-out;
+}
+
+/* --- 4. Accessibility: Reduced Motion Override --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .reveal-scale,
+  .editorial-image-frame img {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .scroll-arrow {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="healthGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B4D3E"/>
+      <stop offset="100%" stop-color="#092017"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#healthGrad)"/>
+  <circle cx="300" cy="170" r="95" fill="#FFFFFF" opacity="0.08"/>
+  <g transform="translate(300, 170)">
+    <!-- Heart & Cross of Wellbeing -->
+    <path d="M0 -15 C-40 -70 -110 -30 -90 30 C-75 75 0 110 0 110 C0 110 75 75 90 30 C110 -30 40 -70 0 -15 Z" fill="#C86D3B" opacity="0.9"/>
+    <!-- Medical Cross -->
+    <rect x="-10" y="-10" width="20" height="60" fill="#FFFFFF" rx="4"/>
+    <rect x="-30" y="10" width="60" height="20" fill="#FFFFFF" rx="4"/>
+  </g>
+  <text x="300" y="320" font-family="'DM Serif Display', serif" font-size="24" fill="#FFFFFF" text-anchor="middle">
+    04. Health & Basic Needs
+  </text>
+  <text x="300" y="350" font-family="'Noto Sans Devanagari', sans-serif" font-size="16" fill="#D4AF37" text-anchor="middle">
+    शिक्षण, आरोग्य, व मूलभूत काम
+  </text>
+</svg>

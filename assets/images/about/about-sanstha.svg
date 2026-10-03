@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F5"/>
+      <stop offset="100%" stop-color="#F3EFE6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#aboutGrad)"/>
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#E5DFD5" stroke-width="2"/>
+  <rect x="30" y="30" width="740" height="540" fill="none" stroke="#12372A" stroke-width="1" stroke-dasharray="6 6" opacity="0.4"/>
+  
+  <g transform="translate(400, 260)">
+    <!-- Heritage Emblem -->
+    <circle cx="0" cy="0" r="110" fill="#12372A"/>
+    <circle cx="0" cy="0" r="98" fill="none" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="0" cy="0" r="85" fill="#1A4A39"/>
+    
+    <!-- Open Book & Torch of Education -->
+    <path d="M-40 25 Q0 10 40 25 L35 60 Q0 45 -35 60 Z" fill="#D4AF37"/>
+    <path d="M-35 22 Q0 8 35 22 L32 -10 Q0 -25 -32 -10 Z" fill="#FFFFFF"/>
+    <path d="M0 -25 L0 22" stroke="#12372A" stroke-width="2"/>
+    <!-- Flame -->
+    <path d="M0 -30 Q-15 -60 0 -85 Q15 -60 0 -30 Z" fill="#C86D3B"/>
+    <circle cx="0" cy="-55" r="8" fill="#D4AF37"/>
+  </g>
+
+  <text x="400" y="440" font-family="'DM Serif Display', Georgia, serif" font-size="28" fill="#12372A" text-anchor="middle">
+    Sangram Sevabhavi Sanstha
+  </text>
+  <text x="400" y="475" font-family="'Noto Serif Devanagari', Georgia, serif" font-size="20" fill="#C86D3B" text-anchor="middle" font-weight="600">
+    संस्थापना: 19 जून 1995 • पिंपळनेर (बीड)
+  </text>
+  <text x="400" y="510" font-family="'Inter', sans-serif" font-size="14" fill="#728078" text-anchor="middle" letter-spacing="1">
+    MAHARASHTRA PUBLIC TRUST ACT 1950 • REGD. NO. MAHA/491/95 BEED
+  </text>
+</svg>

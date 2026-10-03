@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .qr-pixel { fill: #12372A; }
+      .qr-corner { fill: #12372A; }
+      .qr-center { fill: #C86D3B; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="#FFFFFF" rx="16"/>
+  <rect x="12" y="12" width="376" height="376" fill="none" stroke="#E5DFD5" stroke-width="2" rx="12"/>
+
+  <!-- Corner 1 (Top-Left) -->
+  <rect x="40" y="40" width="70" height="70" class="qr-corner" rx="8"/>
+  <rect x="52" y="52" width="46" height="46" fill="#FFFFFF" rx="4"/>
+  <rect x="62" y="62" width="26" height="26" class="qr-corner" rx="2"/>
+
+  <!-- Corner 2 (Top-Right) -->
+  <rect x="290" y="40" width="70" height="70" class="qr-corner" rx="8"/>
+  <rect x="302" y="52" width="46" height="46" fill="#FFFFFF" rx="4"/>
+  <rect x="312" y="62" width="26" height="26" class="qr-corner" rx="2"/>
+
+  <!-- Corner 3 (Bottom-Left) -->
+  <rect x="40" y="290" width="70" height="70" class="qr-corner" rx="8"/>
+  <rect x="52" y="302" width="46" height="46" fill="#FFFFFF" rx="4"/>
+  <rect x="62" y="312" width="26" height="26" class="qr-corner" rx="2"/>
+
+  <!-- Stylized Matrix Data Dots representing UPI Data -->
+  <g class="qr-pixel">
+    <!-- Row Patterns -->
+    <rect x="130" y="45" width="16" height="16" rx="2"/>
+    <rect x="160" y="45" width="16" height="32" rx="2"/>
+    <rect x="190" y="60" width="32" height="16" rx="2"/>
+    <rect x="240" y="45" width="16" height="16" rx="2"/>
+
+    <rect x="130" y="90" width="32" height="16" rx="2"/>
+    <rect x="180" y="90" width="16" height="16" rx="2"/>
+    <rect x="210" y="90" width="46" height="16" rx="2"/>
+
+    <rect x="45" y="130" width="16" height="32" rx="2"/>
+    <rect x="80" y="130" width="32" height="16" rx="2"/>
+    <rect x="130" y="130" width="16" height="16" rx="2"/>
+    <rect x="160" y="130" width="32" height="32" rx="2"/>
+    <rect x="210" y="130" width="16" height="16" rx="2"/>
+    <rect x="240" y="130" width="32" height="16" rx="2"/>
+    <rect x="290" y="130" width="16" height="32" rx="2"/>
+    <rect x="330" y="130" width="32" height="16" rx="2"/>
+
+    <rect x="45" y="180" width="32" height="16" rx="2"/>
+    <rect x="95" y="180" width="16" height="32" rx="2"/>
+    <rect x="290" y="180" width="32" height="16" rx="2"/>
+    <rect x="340" y="180" width="16" height="32" rx="2"/>
+
+    <rect x="45" y="230" width="16" height="16" rx="2"/>
+    <rect x="75" y="230" width="32" height="16" rx="2"/>
+    <rect x="125" y="230" width="16" height="32" rx="2"/>
+    <rect x="160" y="230" width="32" height="16" rx="2"/>
+    <rect x="210" y="230" width="16" height="16" rx="2"/>
+    <rect x="245" y="230" width="32" height="32" rx="2"/>
+    <rect x="295" y="230" width="16" height="16" rx="2"/>
+    <rect x="330" y="230" width="32" height="16" rx="2"/>
+
+    <rect x="130" y="290" width="16" height="32" rx="2"/>
+    <rect x="160" y="290" width="46" height="16" rx="2"/>
+    <rect x="225" y="290" width="16" height="16" rx="2"/>
+    <rect x="260" y="290" width="32" height="32" rx="2"/>
+    <rect x="310" y="290" width="16" height="16" rx="2"/>
+    <rect x="340" y="290" width="22" height="32" rx="2"/>
+
+    <rect x="130" y="340" width="32" height="16" rx="2"/>
+    <rect x="180" y="330" width="16" height="32" rx="2"/>
+    <rect x="215" y="340" width="32" height="16" rx="2"/>
+    <rect x="310" y="330" width="16" height="32" rx="2"/>
+  </g>
+
+  <!-- Center UPI / Sanstha Seal -->
+  <circle cx="200" cy="200" r="32" fill="#FFFFFF" stroke="#12372A" stroke-width="3"/>
+  <circle cx="200" cy="200" r="26" fill="#12372A"/>
+  <text x="200" y="206" font-family="'DM Serif Display', Georgia, serif" font-size="18" fill="#D4AF37" text-anchor="middle" font-weight="bold">
+    SSS
+  </text>
+
+  <!-- Bottom Label -->
+  <text x="200" y="385" font-family="'Inter', monospace" font-size="10" fill="#728078" text-anchor="middle" font-weight="600">
+    UPI: sangramsevabhavisanstha@ibl
+  </text>
+</svg>
